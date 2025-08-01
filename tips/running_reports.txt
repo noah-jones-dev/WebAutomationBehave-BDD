@@ -1,0 +1,13 @@
+Reports:
+- Use command in the terminal to initiate running all tests 
+    
+    -> python3 -m behave -f allure_behave.formatter:AllureFormatter -o report/results features/
+
+- Use command in the terminal to generate report for all tests in quick view 
+
+    -> allure serve report/results
+
+- Use command in the terminal to generate report for all tests and save to share
+
+    -> allure generate report/results -o report/html --clean
+    -> allure open report/html
