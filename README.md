@@ -119,48 +119,48 @@ VIDEOS HERE
 
 ## Project Structure
 
-- [app](./app/) – Contains the main application code or scripts used for testing setup.  
-- [features](./features/) – Holds all Behave feature files and related test logic.  
-    - [steps](./steps/) – Step definitions for Behave scenarios.  
-        - [common_steps](./common_steps.py) – Generic steps used across multiple tests.  
-        - [product_availability_steps](./product_availability_steps.py) – Steps related to checking product availability.  
-        - [search_product_steps](./search_product_steps.py) – Steps for searching and selecting products.  
-        - [translation_steps](./translation_steps.py) – Steps for verifying translations or localized content.  
-    - [tests](./tests/) – Organized feature test files.  
-        - [product_availability_tests](./product_availability_tests.py) – Feature files for product availability scenarios.  
-        - [search_product_tests](./search_product_tests.py) – Feature files for product search scenarios.  
-        - [translation_tests](./translation_tests.py) – Feature files for translation scenarios.  
-    - [environment](./environment/) – Setup and teardown hooks for Behave tests (before/after scenario or feature).  
-- [framework](./framework/) – Core framework utilities, reusable components, and helpers.  
-    - [fields](./fields/) – Page element abstractions following the Page Object Model.  
-        - [button_field](./button_field.py) – Button element interactions.  
-        - [checkbox_field](./checkbox_field.py) – Checkbox element interactions.  
-        - [element_base](./element_base.py) – Base class for all page elements.  
-        - [link_field](./link_field.py) – Link element interactions.  
-        - [list_field](./list_field.py) – List element interactions.  
-        - [nav_field](./nav_field.py) – Navigation element interactions.  
-        - [select_field](./select_field.py) – Dropdown/select element interactions.  
-        - [static_field](./static_field.py) – Static text elements.  
-        - [text_field](./text_field.py) – Input or text box elements.  
-    - [helpers](./helpers/) – Utility modules to assist tests.  
-        - [verifications](./verifications.py) – Verification/assertion helpers for UI elements.  
-            - [verify_base](./verify_base.py) – Base verification logic.  
-            - [verify_button](./verify_button.py) – Button verification helpers.  
-            - [verify_checkbox](./verify_checkbox.py) – Checkbox verification helpers.  
-            - [verify_link](./verify_link.py) – Link verification helpers.  
-            - [verify_list](./verify_list.py) – List verification helpers.  
-            - [verify_select](./verify_select.py) – Dropdown verification helpers.  
-            - [verify_static](./verify_static.py) – Static element verification.  
-            - [verify_text](./verify_text.py) – Text element verification.  
-        - [scroll_directions](./scroll_directions.py) – Helpers for scrolling in different directions.  
-        - [waits](./waits/) – Custom wait conditions for elements.  
-        - [window_utilities](./window_utilities.py) – Browser window/tab utilities.  
-- [pages](./pages/) – Page Object Model (POM) classes representing web pages.  
-    - [base_page](./base_page.py) – Base class for all page objects.  
-    - [crayons_page](./crayons_page.py) – Page object for the Crayons page.  
-    - [home_page](./home_page.py) – Page object for the Home page.  
-    - [product_detail_page](./product_detail_page.py) – Page object for Product Detail page.  
-    - [product_listing_page](./product_listing_page.py) – Page object for Product Listing page.  
-- [report/results](./report/results/) – Folder where test execution reports or logs are saved.  
-- [tips](./tips/) – Additional documentation, guides, or troubleshooting tips.  
-    - [running_reports.txt](./running_reports.txt) – Notes on running and interpreting test reports.  
+- [app](app/) – Contains the main application code or scripts used for testing setup.  
+- [features](features/) – Holds all Behave feature files and related test logic.  
+    - [steps](features/steps/) – Step definitions for Behave scenarios.  
+        - [common_steps.py](features/steps/common_steps.py) – Generic steps used across multiple tests.  
+        - [product_availability_steps.py](features/steps/product_availability_steps.py) – Steps related to checking product availability.  
+        - [search_product_steps.py](features/steps/search_product_steps.py) – Steps for searching and selecting products.  
+        - [translation_steps.py](features/steps/translation_steps.py) – Steps for verifying translations or localized content.  
+    - [tests](features/tests/) – Organized feature test files.  
+        - [product_availability_tests.py](features/tests/product_availability_tests.py) – Feature files for product availability scenarios.  
+        - [search_product_tests.py](features/tests/search_product_tests.py) – Feature files for product search scenarios.  
+        - [translation_tests.py](features/tests/translation_tests.py) – Feature files for translation scenarios.  
+    - [environment](features/environment/) – Setup and teardown hooks for Behave tests (before/after scenario or feature).  
+- [framework](framework/) – Core framework utilities, reusable components, and helpers.  
+    - [fields](framework/fields/) – Page element abstractions following the Page Object Model.  
+        - [button_field.py](framework/fields/button_field.py) – Button element interactions.  
+        - [checkbox_field.py](framework/fields/checkbox_field.py) – Checkbox element interactions.  
+        - [element_base.py](framework/fields/element_base.py) – Base class for all page elements.  
+        - [link_field.py](framework/fields/link_field.py) – Link element interactions.  
+        - [list_field.py](framework/fields/list_field.py) – List element interactions.  
+        - [nav_field.py](framework/fields/nav_field.py) – Navigation element interactions.  
+        - [select_field.py](framework/fields/select_field.py) – Dropdown/select element interactions.  
+        - [static_field.py](framework/fields/static_field.py) – Static text elements.  
+        - [text_field.py](framework/fields/text_field.py) – Input or text box elements.  
+    - [helpers](framework/helpers/) – Utility modules to assist tests.  
+        - [verifications](framework/helpers/verifications/) – Verification/assertion helpers for UI elements.  
+            - [verify_base.py](framework/helpers/verifications/verify_base.py) – Base verification logic.  
+            - [verify_button.py](framework/helpers/verifications/verify_button.py) – Button verification helpers.  
+            - [verify_checkbox.py](framework/helpers/verifications/verify_checkbox.py) – Checkbox verification helpers.  
+            - [verify_link.py](framework/helpers/verifications/verify_link.py) – Link verification helpers.  
+            - [verify_list.py](framework/helpers/verifications/verify_list.py) – List verification helpers.  
+            - [verify_select.py](framework/helpers/verifications/verify_select.py) – Dropdown verification helpers.  
+            - [verify_static.py](framework/helpers/verifications/verify_static.py) – Static element verification.  
+            - [verify_text.py](framework/helpers/verifications/verify_text.py) – Text element verification.  
+        - [scroll_directions.py](framework/helpers/scroll_directions.py) – Helpers for scrolling in different directions.  
+        - [waits.py](framework/helpers/waits.py) – Custom wait conditions for elements.  
+        - [window_utilities.py](framework/helpers/window_utilities.py) – Browser window/tab utilities.  
+- [pages](pages/) – Page Object Model (POM) classes representing web pages.  
+    - [base_page.py](pages/base_page.py) – Base class for all page objects.  
+    - [crayons_page.py](pages/crayons_page.py) – Page object for the Crayons page.  
+    - [home_page.py](pages/home_page.py) – Page object for the Home page.  
+    - [product_detail_page.py](pages/product_detail_page.py) – Page object for Product Detail page.  
+    - [product_listing_page.py](pages/product_listing_page.py) – Page object for Product Listing page.  
+- [report/results](report/results/) – Folder where test execution reports or logs are saved.  
+- [tips](tips/) – Additional documentation, guides, or troubleshooting tips.  
+    - [running_reports.txt](tips/running_reports.txt) – Notes on running and interpreting test reports.  
