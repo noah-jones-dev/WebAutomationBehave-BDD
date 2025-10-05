@@ -115,7 +115,9 @@ allure serve Reports/Results
 ```
 ## Live Tests
 
-VIDEOS HERE
+![FindAProduct](https://github.com/user-attachments/assets/abb69c90-276a-42be-b32a-afab4f4fbd61)
+
+![VerifyTranslation](https://github.com/user-attachments/assets/3be2a3c7-ca7f-44f4-85e0-c7aaf4da5904)
 
 ## Project Structure
 
